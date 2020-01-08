@@ -14,6 +14,8 @@ Notes:
 
 ## Week 03: Divide and Conquer
 Notes:
+- [Divide and Conquer](./Divide_Conquer.ipynb)
+- [Merge Sort](./Merge_Sort.ipynb)
 
 ## Week 04: Object-Oriented Paradigm
 Notes:
