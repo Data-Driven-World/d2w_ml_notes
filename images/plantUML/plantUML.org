@@ -1,0 +1,94 @@
+#+STARTUP: showall
+
+* PlantUML
+** Week 1
+** Week 2
+** Week 3
+** Week 4
+*** Sample class diagram
+    #+BEGIN_SRC plantuml :file W4/sampleClass.svg
+      class Example {
+	- private field
+	# protected field
+	~ package private field
+	+ public field
+	- private_method()
+	# protected_method()
+	~ package private method()
+	+ public method()
+      }    
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:W4/sampleClass.svg]]
+*** Dog
+    #+BEGIN_SRC plantuml :file W4/dog.svg
+      class Dog {
+	- dogBreed
+	- weight
+	- name
+	- bark()
+	- bigBark()
+      }	
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:W4/dog.svg]]
+
+*** Stack
+    #+BEGIN_SRC plantuml :file W4/stack.svg
+      class stack {
+	- items
+	- push(item)
+	- pop()
+	- peek()
+      }	
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:W4/stack.svg]]
+
+*** Queue
+    #+BEGIN_SRC plantuml :file W4/queue.svg
+      class queue {
+	- items
+	- enqueue(item)
+	- dequeue()
+	- peek()
+      }	
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:W4/queue.svg]]
+
+*** Stack_Queue
+   #+BEGIN_SRC plantuml :file W4/stack_queue.svg
+     left to right direction
+
+     queue --|> stack
+
+     class queue {
+       - left_stack
+       - right_stack
+       - enqueue(item)
+       - dequeue()
+       - peek()
+       - is_empty()
+       - size()
+	
+     }
+
+     class stack {
+       - items
+       - push(item)
+       - pop()
+       - peek()
+       - is_empty()
+       - size()
+     }
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:W4/stack_queue.svg]]
+
+** 

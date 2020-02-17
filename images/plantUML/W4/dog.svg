@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="130px" preserveAspectRatio="none" style="width:99px;height:130px;" version="1.1" viewBox="0 0 99 130" width="99px" zoomAndPan="magnify"><defs><filter height="300%" id="fckvdw84klna8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[454ed48f055567edc734f170f61b4daf]
+class Dog--><rect fill="#FEFECE" filter="url(#fckvdw84klna8)" height="112.0234" id="Dog" style="stroke: #A80036; stroke-width: 1.5;" width="81" x="7" y="7"/><ellipse cx="32.8" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M35.7688,28.6406 Q35.1906,28.9375 34.55,29.0859 Q33.9094,29.2344 33.2063,29.2344 Q30.7062,29.2344 29.3859,27.5859 Q28.0656,25.9375 28.0656,22.8125 Q28.0656,19.6875 29.3859,18.0313 Q30.7062,16.375 33.2063,16.375 Q33.9094,16.375 34.5578,16.5313 Q35.2063,16.6875 35.7688,16.9844 L35.7688,19.7031 Q35.1438,19.125 34.55,18.8516 Q33.9563,18.5781 33.3313,18.5781 Q31.9875,18.5781 31.3,19.6484 Q30.6125,20.7188 30.6125,22.8125 Q30.6125,24.9063 31.3,25.9766 Q31.9875,27.0469 33.3313,27.0469 Q33.9563,27.0469 34.55,26.7734 Q35.1438,26.5 35.7688,25.9219 L35.7688,28.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="49.2" y="27.1543">Dog</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="87" y1="39" y2="39"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="27" y="53.2104">dogBreed</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="59.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="27" y="66.0151">weight</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="72.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="27" y="78.8198">name</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="87" y1="85.4141" y2="85.4141"/><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="93.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="27" y="99.6245">bark()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="106.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="27" y="112.4292">bigBark()</text><!--MD5=[114fa79f104dd565431827b64fb62659]
+@startuml
+class Dog {
+  - dogBreed
+  - weight
+  - name
+  - bark()
+  - bigBark()
+}	
+@enduml
+
+PlantUML version 1.2020.00(Sat Jan 11 20:30:53 SGT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_162-8u162-b12-1-b12
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: SG
+--></g></svg>

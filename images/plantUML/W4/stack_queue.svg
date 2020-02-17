@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="156px" preserveAspectRatio="none" style="width:272px;height:156px;" version="1.1" viewBox="0 0 272 156" width="272px" zoomAndPan="magnify"><defs><filter height="300%" id="fn9xg6vhxn5lp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[678896f9a038d78c237f4050933855b4]
+class queue--><rect fill="#FEFECE" filter="url(#fn9xg6vhxn5lp)" height="137.6328" id="queue" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="6" y="8"/><ellipse cx="37.2" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M40.1688,29.6406 Q39.5906,29.9375 38.95,30.0859 Q38.3094,30.2344 37.6063,30.2344 Q35.1063,30.2344 33.7859,28.5859 Q32.4656,26.9375 32.4656,23.8125 Q32.4656,20.6875 33.7859,19.0313 Q35.1063,17.375 37.6063,17.375 Q38.3094,17.375 38.9578,17.5313 Q39.6063,17.6875 40.1688,17.9844 L40.1688,20.7031 Q39.5438,20.125 38.95,19.8516 Q38.3563,19.5781 37.7313,19.5781 Q36.3875,19.5781 35.7,20.6484 Q35.0125,21.7188 35.0125,23.8125 Q35.0125,25.9063 35.7,26.9766 Q36.3875,28.0469 37.7313,28.0469 Q38.3563,28.0469 38.95,27.7734 Q39.5438,27.5 40.1688,26.9219 L40.1688,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="54.8" y="28.1543">queue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="113" y1="40" y2="40"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="26" y="54.2104">left_stack</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="60.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="26" y="67.0151">right_stack</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="113" y1="73.6094" y2="73.6094"/><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="81.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="26" y="87.8198">enqueue(item)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="94.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="26" y="100.6245">dequeue()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="107.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="26" y="113.4292">peek()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="120.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="26" y="126.2339">is_empty()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="132.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="26" y="139.0386">size()</text><!--MD5=[2abc714dff23b61b9c95db5294a85bdf]
+class stack--><rect fill="#FEFECE" filter="url(#fn9xg6vhxn5lp)" height="124.8281" id="stack" style="stroke: #A80036; stroke-width: 1.5;" width="87" x="174" y="14.5"/><ellipse cx="198.45" cy="30.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M201.4188,36.1406 Q200.8406,36.4375 200.2,36.5859 Q199.5594,36.7344 198.8563,36.7344 Q196.3563,36.7344 195.0359,35.0859 Q193.7156,33.4375 193.7156,30.3125 Q193.7156,27.1875 195.0359,25.5313 Q196.3563,23.875 198.8563,23.875 Q199.5594,23.875 200.2078,24.0313 Q200.8563,24.1875 201.4188,24.4844 L201.4188,27.2031 Q200.7938,26.625 200.2,26.3516 Q199.6063,26.0781 198.9813,26.0781 Q197.6375,26.0781 196.95,27.1484 Q196.2625,28.2188 196.2625,30.3125 Q196.2625,32.4063 196.95,33.4766 Q197.6375,34.5469 198.9813,34.5469 Q199.6063,34.5469 200.2,34.2734 Q200.7938,34 201.4188,33.4219 L201.4188,36.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="214.55" y="34.6543">stack</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="175" x2="260" y1="46.5" y2="46.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="54.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="194" y="60.7104">items</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="175" x2="260" y1="67.3047" y2="67.3047"/><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="75.3047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="194" y="81.5151">push(item)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="88.1094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="194" y="94.3198">pop()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="100.9141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="194" y="107.1245">peek()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="113.7188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="194" y="119.9292">is_empty()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="182" y="126.5234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="194" y="132.7339">size()</text><!--MD5=[05fc4ac20b7e99d3ec6e2a0d431387d1]
+link queue to stack--><path d="M114.2026,77 C126.8388,77 140.412,77 153.4302,77 " fill="none" id="queue-&gt;stack" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="153.8775,69.9999,173.8774,77,153.8774,83.9999,153.8775,69.9999" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1536fb6dacb5b7eb368434c74da998b2]
+@startuml
+left to right direction
+
+queue - -|> stack
+
+class queue {
+  - left_stack
+  - right_stack
+  - enqueue(item)
+  - dequeue()
+  - peek()
+  - is_empty()
+  - size()
+
+}
+
+class stack {
+  - items
+  - push(item)
+  - pop()
+  - peek()
+  - is_empty()
+  - size()
+}
+@enduml
+
+PlantUML version 1.2020.00(Sat Jan 11 20:30:53 SGT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_162-8u162-b12-1-b12
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: SG
+--></g></svg>
