@@ -19,6 +19,7 @@ Notes:
 
 ## Week 04: Object-Oriented Paradigm
 Notes:
+- [Object Oriented Programming](./Object_Oriented_Programming.ipynb)
 
 ## Week 05: Design of State Machines
 Notes:
