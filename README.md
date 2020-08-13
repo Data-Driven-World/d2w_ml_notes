@@ -32,6 +32,8 @@ Notes:
 
 ## Week 10: Modeling Continuous Data
 Notes:
+- [Linear Regression](./LinearRegression.ipynb)
+- [Multiple Linear Regression](./Multiple_Linear_Regression.ipynb)
 
 ## Week 11: Classifying Categorical Data
 Notes:
