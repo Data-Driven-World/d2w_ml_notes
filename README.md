@@ -37,6 +37,7 @@ Notes:
 
 ## Week 11: Classifying Categorical Data
 Notes:
+- [Logistic Regression](./Logistic_Regression.ipynb)
 
 ## Week 12: Analyzing Textual Data
 Notes:
