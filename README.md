@@ -21,13 +21,15 @@ Notes:
 Notes:
 - [Object Oriented Programming](./Object_Oriented_Programming.ipynb)
 
-## Week 05: Design of State Machines
+## Week 05: Searching Data
 Notes:
 
-## Week 06: Searching Data
+## Week 06: Inheritance and Object-Oriented Design
 Notes:
 
-## Week 09: Visualizing Data
+## Week 08: Design of State Machines
+
+## Week 09: Visualizing and Processing Data
 Notes:
 
 ## Week 10: Modeling Continuous Data
@@ -39,8 +41,7 @@ Notes:
 Notes:
 - [Logistic Regression](./Logistic_Regression.ipynb)
 
-## Week 12: Analyzing Textual Data
-Notes:
+
 
 
 
