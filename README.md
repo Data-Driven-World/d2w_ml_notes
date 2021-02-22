@@ -20,6 +20,7 @@ Notes:
 ## Week 04: Object-Oriented Paradigm
 Notes:
 - [Object Oriented Programming](./Object_Oriented_Programming.ipynb)
+- [Stack and Queues](./Stack_Queues.ipynb)
 
 ## Week 05: Searching Data
 Notes:
