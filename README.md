@@ -24,6 +24,8 @@ Notes:
 
 ## Week 05: Searching Data
 Notes:
+- [Introduction to Graph](./Intro_to_Graph.ipynb)
+- [Graph Search](./Graph_Search.ipynb)
 
 ## Week 06: Inheritance and Object-Oriented Design
 Notes:
