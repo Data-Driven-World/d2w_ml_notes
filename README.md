@@ -30,7 +30,7 @@ Notes:
 ## Week 06: Inheritance and Object-Oriented Design
 Notes:
 - [Inheritance and Abstract Base Class](./Inheritance_ABC.ipynb)
-- [Fixed Array and Linked List](./Array_LinkedList.ipynb)
+- [Fixed-Size Array and Linked List](./Array_LinkedList.ipynb)
 
 ## Week 08: Design of State Machines
 
