@@ -33,6 +33,8 @@ Notes:
 - [Fixed-Size Array and Linked List](./Array_LinkedList.ipynb)
 
 ## Week 08: Design of State Machines
+- [State Machine](./State_Machine.ipynb)
+- [SM Abstract Class](./SM_ABC.ipynb)
 
 ## Week 09: Visualizing and Processing Data
 Notes:
