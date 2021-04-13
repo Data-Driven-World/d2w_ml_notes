@@ -35,6 +35,7 @@ Notes:
 ## Week 08: Design of State Machines
 - [State Machine](./State_Machine.ipynb)
 - [SM Abstract Class](./SM_ABC.ipynb)
+- [State Space Search](./State_Space_Search.ipynb)
 
 ## Week 09: Visualizing and Processing Data
 Notes:
