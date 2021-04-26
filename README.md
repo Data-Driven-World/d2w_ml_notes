@@ -40,7 +40,7 @@ Notes:
 ## Week 09: Visualizing and Processing Data
 Notes:
 - [Working With Data](./Working_With_Data.ipynb)
-- [Creating Plots using Matplotlib and Seaborn]
+- [Creating Plots using Matplotlib and Seaborn](./Visualization.ipynb)
 
 ## Week 10: Modeling Continuous Data
 Notes:
