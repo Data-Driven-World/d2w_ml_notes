@@ -52,6 +52,7 @@ Notes:
 - [Logistic Regression](./Logistic_Regression.ipynb)
 
 
-
+## Contributors
+These notes and problem sets were prepared by Oka Kurniawan, Zachary Teo Wei Jie, and Amanda Kosim.
 
 
