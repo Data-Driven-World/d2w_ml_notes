@@ -50,6 +50,7 @@ Notes:
 ## Week 11: Classifying Categorical Data
 Notes:
 - [Logistic Regression](./Logistic_Regression.ipynb)
+- [Confusion Matrix and Metrics](./Confusion_Matrix_Metrics.ipynb)
 
 
 ## Contributors
