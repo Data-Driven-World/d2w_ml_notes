@@ -32,26 +32,25 @@ Notes:
 - [Inheritance and Abstract Base Class](./Inheritance_ABC.ipynb)
 - [Fixed-Size Array and Linked List](./Array_LinkedList.ipynb)
 
-## Week 08: Design of State Machines
-- [State Machine](./State_Machine.ipynb)
-- [SM Abstract Class](./SM_ABC.ipynb)
-- [State Space Search](./State_Space_Search.ipynb)
-
-## Week 09: Visualizing and Processing Data
+## Week 08: Visualizing and Processing Data
 Notes:
 - [Working With Data](./Working_With_Data.ipynb)
 - [Creating Plots using Matplotlib and Seaborn](./Visualization.ipynb)
 
-## Week 10: Modeling Continuous Data
+## Week 09: Modeling Continuous Data
 Notes:
 - [Linear Regression](./LinearRegression.ipynb)
 - [Multiple Linear Regression](./Multiple_Linear_Regression.ipynb)
 
-## Week 11: Classifying Categorical Data
+## Week 10: Classifying Categorical Data
 Notes:
 - [Logistic Regression](./Logistic_Regression.ipynb)
 - [Confusion Matrix and Metrics](./Confusion_Matrix_Metrics.ipynb)
 
+## Week 12: Design of State Machines
+- [State Machine](./State_Machine.ipynb)
+- [SM Abstract Class](./SM_ABC.ipynb)
+- [State Space Search](./State_Space_Search.ipynb)
 
 ## Contributors
 These notes and problem sets were prepared by Oka Kurniawan, Zachary Teo Wei Jie, and Amanda Kosim.
