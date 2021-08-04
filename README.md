@@ -49,7 +49,7 @@ Notes:
 
 ## Week 12: Design of State Machines
 - [State Machine](./State_Machine.ipynb)
-- [SM Abstract Class](./SM_ABC.ipynb)
+- [SM Abstract Class](./StateMachine_ABC.ipynb)
 - [State Space Search](./State_Space_Search.ipynb)
 
 ## Contributors
