@@ -13101,7 +13101,7 @@ div#notebook {
 <p>Now, let's go back to our definition of a <em>heap</em>. The heap is an array of object that we can view as a nearly complete binary tree.</p>
 <ul>
 <li>A binary tree is a tree where all the nodes have only a maximum of two children, which you can call <em>left</em> child and <em>right</em> child.</li>
-<li>A <em>full</em> binary tree is a tree where all the nodes except the leaves have <em>two</em> children. In our case, heap is a <em>complete</em> binary tree and not a <em>full</em> binary tree. A <em>complete</em> binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible. </li>
+<li>A <em>full</em> binary tree is a tree where all the nodes except the leaves have <em>two</em> children. In our case, heap is a <em>complete</em> binary tree and not a <em>full</em> binary tree. A <em>complete</em> binary tree is a binary tree in which every level, except possibly the last, is <em>completely filled</em>, and all nodes are as far left as possible. A <em>complete</em> binary tree is similar to a full binary tree with two major differences: all the leaf elements must lean toward the left and the last leaf element may not have the right sibling. </li>
 <li>The <em>root</em> of the tree is the node with index 0. </li>
 <li>We put the elements of our array into our <em>tree</em> from top to bottom and left to right sequence. With this, we can calculate the index of the children and the parent for every node.</li>
 </ul>
@@ -13196,7 +13196,7 @@ assumption:
 </li>
 <li><p>We, then, move our current index to the place where we swap, i.e. old index of element 8. So we are now at index 8.</p>
 </li>
-<li>Since this node has no more children, we stop. We can check whether the node has more children by calculating the index of the <em>left</em> child and see if it is still within the length of the array minus one, i.e. $left(i) &lt; n-1$, where $i$ is the current node and $n$ is the number of element in the array.</li>
+<li>Since this node has no more children, we stop. We can check whether the node has more children by calculating the index of the <em>left</em> child and see if it is still within the length of the array minus one, i.e. $left(i) &lt; n-1$, where $i$ is the current node index and $n$ is the number of element in the array.</li>
 </ul>
 <h4 id="(D)esign-of-Algorithm">(D)esign of Algorithm<a class="anchor-link" href="#(D)esign-of-Algorithm">&#182;</a></h4><p>We can write down the steps we did in the previous section as follows.</p>
 

@@ -13265,7 +13265,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The above figure shows what happens when we insert the data at position 2 (third position). Assuming that the array is already full, we need to ensure that we have enough capacity to insert a new element. Therefore, we first need to increase the memory size by doubling the array. Once there is enough space, we shift all the elements to the right and modify the value of the element at position 2 (third position).</p>
-<p>What is the computational complexity of such a process? To create a new with double size and copy the old values to the new array takes $O(n)$ time. Furthermore, shifting the values by one in the worst case scenariou takes $O(n)$ time and modifying the value takes constant time, i.e. $O(1)$. So we should expect such insert operation takes linear $O(n)$ complexity.</p>
+<p>What is the computational complexity of such a process? To create a new array with double the size and copy the old values to the new array takes $O(n)$ time. Furthermore, shifting the values by one in the worst case scenariou takes $O(n)$ time and modifying the value takes constant time, i.e. $O(1)$. So we should expect such insert operation takes linear $O(n)$ complexity.</p>
 <p>Removing an element is similar. We can simply shift left all the elements by one position. Depending on the design, we may want to choose to keep the empty space available once we reserve it. This, however, may not be a preferred option in systems with small memories like embedded systems.</p>
 
 </div>
@@ -13357,9 +13357,9 @@ $$\text{address_i} = \text{address_0} + i \times \text{size_of_one_element}$$<p>
 <p>In the above figure, we insert a new element at position 2 (third element). In order to do so, we do the following:</p>
 <ol>
 <li>Traverse up to Node 1.</li>
-<li>Create a new node.</li>
-<li>Get the <em>next</em> reference of Node 1 and set it as the <em>next</em> of the new Node.</li>
-<li>Set the new Node as the <em>next</em> of Node 1.</li>
+<li>Create a new Node.</li>
+<li>Get the <em>next</em> reference of Node 1 and set it as the <em>next</em> reference of the newly created Node.</li>
+<li>Set the <em>next</em> reference of Node 1 to point to the newly created Node.</li>
 </ol>
 
 </div>
@@ -13468,7 +13468,7 @@ $$\text{address_i} = \text{address_0} + i \times \text{size_of_one_element}$$<p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To summarize, we have implemented two kind of list classes. One is implemented using a fixed-size array while the other one is implemented using a linked list. Both classes inherit from a common base class called <code>MyAbstractList</code> which provides the common attributes, properties and methods that all list classes have. In this way, we do not duplicates the codes that are the same in <code>MyArrayList</code> and <code>MyLinkedList</code>. This common methods and codes are placed in the parent class <code>MyAbstractList</code>. Only the different implementation is defined in the child classes' methods. The parent class <code>MyAbstractList</code> inherits and implements <code>Iterator</code> class. This ensures that all our list are iterable. To implement <code>Iterator</code> class, we must define <code>__iter__()</code> method in our <code>MyAbstractList</code> which returns an iterator object. Both <code>MyArrayList</code> and <code>MyLinkedList</code> inherits this iterator method when they inherit from <code>MyAbstractList</code>.</p>
+<p>To summarize, we have implemented two kind of list classes. One is implemented using a fixed-size array while the other one is implemented using a linked list. Both classes inherit from a common base class called <code>MyAbstractList</code> which provides the common attributes, properties and methods that all list classes have. In this way, we do not duplicate the codes that are the same in <code>MyArrayList</code> and <code>MyLinkedList</code>. This common methods and codes are placed in the parent class <code>MyAbstractList</code>. Only the different implementation is defined in the child classes' methods. The class <code>MyAbstractList</code> inherits and implements <code>Iterator</code> class. This ensures that all our list are iterable. To implement <code>Iterator</code> class, we must define <code>__iter__()</code> method in our <code>MyAbstractList</code> which returns an iterator object. Both <code>MyArrayList</code> and <code>MyLinkedList</code> inherit this iterator method when they inherit from <code>MyAbstractList</code>.</p>
 
 </div>
 </div>

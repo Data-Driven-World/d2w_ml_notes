@@ -13174,7 +13174,7 @@ numbers = [16, 14, 10, 8, 7, 8, 3, 2, 4, 1]</code></pre>
 <li>The number of <em>inner</em> iteration is the $n-1$, where $n$ is the number of elements in the list. This is because the inner iteration compares a pair. So if there is $n$ elements, there will be $n-1$ pairs to compare. </li>
 <li>The number of <em>outer</em> iteration is also $n-1$. You can refer back to the case above that there were 9 <em>outer</em> iterations for the 10 elements.</li>
 </ul>
-<p>Let's write down what we did in the above case. Note that in this algorithm we chose not to return the sorted list as a new object, but rather <em>sort the list in place</em>. This means that the input list is modified and the sorted list exist in the object pointed by the input list. The advantage of this is that the list need not be duplicated and the memory is saved as we deal only with one list.</p>
+<p>Let's write down what we did in the above case. Note that in this algorithm we chose not to return the sorted list as a new object, but rather <em>sort the list in place</em>. This means that the input list is modified and the sorted list exists in the object pointed by the input list. The advantage of this is that the list need not be duplicated and the memory is saved as we deal only with one list.</p>
 
 <pre><code>Bubble Sort 
 Version: 1
@@ -13286,7 +13286,7 @@ Steps:
 <p>[1, 4, 7, 3, 10, 100, 1000]</p>
 <p>In the second <em>outer</em> pass, we first compare the pair (1, 4), but no swap happens. Similarly with (4, 7). Now, when comparing the pair (7, 3), we do a swap to result in.</p>
 <p>[1, 4, <strong>3, 7</strong>, 10, 100, 1000]</p>
-<p>When we have a swap, we will record down our position. In this case, it is at the position of the <strong>4th element in the list, or index 3</strong> (if our index start from 0). Subsequently, we compare (7, 10), but no swap happens. Similarly with (10, 100). We stop at this point because the second iteration only compares up to the second last element in the above algorithm.</p>
+<p>When we have a swap, we will record down our position. In this case, it is at the position of the <strong>4th element in the list, or index 3</strong> (if our index starts from 0). Subsequently, we compare (7, 10), but no swap happens. Similarly with (10, 100). We stop at this point because the second iteration only compares up to the second last element in the above algorithm.</p>
 <p>Now, if we follow the previous algorithm, the next <em>outer</em> pass will compare up to the third last element, which is 10. However, we note that the last five elements are already ordered. We know this because in the last pass, the last swap happens at (7, 3) to (3, 7) pair. In this case, we just need to run our <em>inner</em> iteration up to this position, i.e. <strong>4th position, or index 3</strong>.</p>
 <p>We can modify our pseudocode as follows.</p>
 

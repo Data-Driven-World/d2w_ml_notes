@@ -13190,7 +13190,7 @@ Input:
 Output:
 - list of vertices that gives the shortest path from s to v
 Steps:
-1. if v is the same as
+1. if v is the same as the start vertex
   1.1 return a list with one element, i.e. s
 2. otherwise, check if parent of v is NILL
   2.1 return "No path from s to v exist"
@@ -13199,7 +13199,7 @@ Steps:
   3.2 add v into the result from 3.1</code></pre>
 <p>The above algorithm uses recursion. There are two base cases. The first base case is when the destination vertex to be the same as the starting vertex. In this case, the output is just that vertex. The second base case is when there is no path from s to v. We know there is no path when along the path starting from v we find a vertex which parent is NILL. The recursion case is described in step 3. In this case, we call the same function but with the destination vertex to be the parent of the current destination vertex. By moving the destination vertex to the parent, we reduce the problem and make it smaller until we reach base case described in step 1.</p>
 <p>Let's see an example when we search a shortest path from A to F in the previous graph. In this case, v is not the same as s since A and F are two different vertices. So we look into F's parent, which is C. Now we call the same function to find the path from A to C. Since A and C are different, we look into C's parent, which is B and call the function to find the path from A to B. Finally, we look into B's parent and find the path from A to A. This is the base case. When we reach the base case, we return a list containing A as the result (step 1.1). Then we move back and do step 3.2 to add B, C, and finally F. So the shortest path from A to F will be a list <code>[A, B, C, F]</code>.</p>
-<p>Now it's time to implement the algorithm. But before, we can implement the algorithm, we need to modify the class <code>Vertex</code> to contain a few additional attributes:</p>
+<p>Now it's time to implement the algorithm. But before we can implement the algorithm, we need to modify the class <code>Vertex</code> to contain a few additional attributes:</p>
 <ul>
 <li>colour</li>
 <li>distance</li>
@@ -13283,7 +13283,7 @@ Steps:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the figures above, every time we visit a vertex, we put a timestamp on that vertex called <strong>discovery time</strong>. Once we vinish visiting all the neighbours of that vertex, we put another timestamp called <strong>finishing time</strong>. For example, vertex A has a discrovery time 1 and finishing time 12 as indicated by 1/12 in the figure.</p>
+<p>In the figures above, every time we visit a vertex, we put a timestamp on that vertex called <strong>discovery time</strong>. Once we finish visiting all the neighbours of that vertex, we put another timestamp called <strong>finishing time</strong>. For example, vertex A has a discrovery time 1 and finishing time 12 as indicated by 1/12 in the figure.</p>
 <p>We also labelled the edges with two different kind of symbols. The solid line edges are called <strong>tree edges</strong>. These are edges in the depth-first forest. An edge (u, v) is a tree edge if v was first discovered by exploring edge (u, v). For example, the edge (A, B) is a tree edge since B is first discovered by exploring the edge (A, B). On the other hand the edge (A, D) is not a tree edge since D was not first discovered by exploring edge (A, D). Rather, D was first discovered by exploring the edge (C, D).</p>
 <p>This brings us to the other kind of edges discovered by depth-first search. The dashed line edges are called <strong>back edges</strong>. These are those edges connected a vertex u to an ancestor v in a depth-first tree. For example, A is an ancestor of D. We can see that because we explore D through A - B - C - D. So the edge connecting D to A is a back edge since it connects D to one of its ancestor. Similarly with the edge (C, F). The depth-first forest is shown below.</p>
 <p><img src="https://www.dropbox.com/s/buajqhy3fxuncag/dfs_forest.png?raw=1" alt="drawing" width="400"/></p>
@@ -13374,7 +13374,7 @@ Steps:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The sequence above is based on its finishing time from the largest to the smallest. The first three are independent and their sequence can be interchange, but subsequently, "shirt" must be done only after "undershirt" task. This sequence may also depends on which vertex the search encounter first. With this in mind, we can write the topological sort steps as follows.</p>
+<p>The sequence above is based on its finishing time from the largest to the smallest. The first three are independent and their sequence can be interchanged, but subsequently, "shirt" must be done only after "undershirt" task. This sequence may also depends on which vertex the search encounters first. With this in mind, we can write the topological sort steps as follows.</p>
 
 <pre><code>Topological-Sort
 Input:
