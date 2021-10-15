@@ -13111,7 +13111,7 @@ Attributes and methods define your object. </li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Class definition</span>
@@ -13165,7 +13165,7 @@ Attributes and methods define your object. </li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Object Instantiation</span>
@@ -13184,7 +13184,7 @@ Attributes and methods define your object. </li>
 <ul>
 <li>The object is created or <em>instantiated</em> by using the class name followed by some values used to initialze the object. In this case: <code>RobotTurtle("T1")</code>. The argument "T1" is passed on to initialize the object's name. This object is then pointed to by the variable <code>my_robot</code>.</li>
 <li>Each of the argument in the <em>object instantiation</em> is passed on to the <code>__init__()</code> method. In this case, "T1" is passed on to the formal argument <code>name</code> in <code>__init__()</code>. </li>
-<li>The <strong>first</strong> argument of any method in a class is always called <code>self</code> following Python's <a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a>. The <code>self</code> argument is also found as the first argument inside the method <code>move</code> and <code>tell_name</code>. The first arugment <code>self</code> refers to the particular object instance of the class. It can also be used to access methods and attributes of the current object.</li>
+<li>The <strong>first</strong> argument of any method in a class is always called <code>self</code> following Python's <a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a>. The <code>self</code> argument is also found as the first argument inside the method <code>move</code> and <code>tell_name</code>. The first argument <code>self</code> refers to the particular object instance of the class. It can also be used to access methods and attributes of the current object.</li>
 <li>At the end of object instantiation, the object <code>my_robot</code> would have the following attributes initalized:<ul>
 <li><code>_name</code> with a value <code>T1</code></li>
 <li><code>_speed</code> with a value of <code>1</code></li>
@@ -13199,7 +13199,7 @@ Attributes and methods define your object. </li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Accessing object&#39;s method</span>
@@ -13245,7 +13245,7 @@ Attributes and methods define your object. </li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># accessing object&#39;s attribute</span>
@@ -13293,7 +13293,7 @@ Attributes and methods define your object. </li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span> <span class="o">=</span> <span class="n">RobotTurtle</span><span class="p">(</span><span class="s2">&quot;T2&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -13370,7 +13370,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">_pos</span> <span class="o">=</span> <span class="s2">&quot;This is not supposed to be allowed&quot;</span>
@@ -13410,7 +13410,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s2">&quot;up&quot;</span><span class="p">)</span>
@@ -13433,10 +13433,10 @@ Robot T2 now at (8, 8)
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-16-5345a1aa5909&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">/var/folders/9l/s5tr888d1yldwlfg3_yyk7380000gq/T/ipykernel_18003/3587695430.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>my_robot<span class="ansi-blue-fg">.</span>move<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;up&#34;</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">&lt;ipython-input-10-012bc05876e6&gt;</span> in <span class="ansi-cyan-fg">move</span><span class="ansi-blue-fg">(self, direction)</span>
+<span class="ansi-green-fg">/var/folders/9l/s5tr888d1yldwlfg3_yyk7380000gq/T/ipykernel_18003/2532245999.py</span> in <span class="ansi-cyan-fg">move</span><span class="ansi-blue-fg">(self, direction)</span>
 <span class="ansi-green-intense-fg ansi-bold">      9</span>     <span class="ansi-red-fg"># Methods:</span>
 <span class="ansi-green-intense-fg ansi-bold">     10</span>     <span class="ansi-green-fg">def</span> move<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> direction<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">---&gt; 11</span><span class="ansi-red-fg">         update = {&#39;up&#39; : (self._pos[0], self._pos[1] + self._speed),
@@ -13466,7 +13466,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Class definition</span>
@@ -13574,7 +13574,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this is to create a new object with property, make sure you run the cell with the class definition first</span>
@@ -13588,7 +13588,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># enquire name and speed</span>
@@ -13597,25 +13597,6 @@ Robot T2 now at (8, 8)
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>T4
-1
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13631,7 +13612,7 @@ Robot T2 now at (8, 8)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;T4new&quot;</span>
@@ -13641,25 +13622,6 @@ Robot T2 now at (8, 8)
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>T4new
-T4new
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13674,7 +13636,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">2</span>
@@ -13684,25 +13646,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2
-2
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13725,31 +13668,13 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_robot</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(0, 0)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13764,7 +13689,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s2">&quot;up&quot;</span><span class="p">)</span>
@@ -13773,24 +13698,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(0, 4)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13820,33 +13727,13 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">_pos</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[24]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(0, 4)</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13883,7 +13770,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -13914,7 +13801,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># object instantiation</span>
@@ -13924,25 +13811,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>3 4
-5.0
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13983,7 +13851,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Class definition</span>
@@ -14064,7 +13932,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span> <span class="o">=</span> <span class="n">RobotTurtle</span><span class="p">(</span><span class="s2">&quot;T with Coordinate&quot;</span><span class="p">)</span>
@@ -14072,24 +13940,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;__main__.Coordinate object at 0x7fca20dccf10&gt;
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14104,31 +13954,13 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_robot</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">my_robot</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>0 0
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14143,7 +13975,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
@@ -14152,24 +13984,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1 -1
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14185,7 +13999,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">Coordinate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -14193,24 +14007,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;__main__.Coordinate object at 0x7fc9e077df90&gt;
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14225,7 +14021,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -14259,7 +14055,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">Coordinate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -14267,24 +14063,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, 3)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14299,7 +14077,7 @@ T4new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_robot</span> <span class="o">=</span> <span class="n">RobotTurtle</span><span class="p">(</span><span class="s2">&quot;T with Coordinate&quot;</span><span class="p">)</span>
@@ -14307,24 +14085,6 @@ T4new
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(0, 0)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 

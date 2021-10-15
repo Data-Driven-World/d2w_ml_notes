@@ -13112,7 +13112,7 @@ $$f(x) = \omega(g(x))$$<p>if and only if,</p>
 $$\lim_{x\to\infty} \frac{g(x)}{f(x)} =0$$<p>This is like the reverse of little Oh,</p>
 $$f(x) = \omega(g(x)) \text{ if and only if } g(x) = o(f(x))$$<p>For example,</p>
 $$x^{1.5} = \omega(x)$$<p>This is true because</p>
-$$\lim_{x\to\infty} \frac{x^{1.5}}{x} = \lim_{x\to\infty} x^{0.5} = \lim_{x\to\infty} \frac{1}{\sqrt{x}} = 0$$<h4 id="Theta">Theta<a class="anchor-link" href="#Theta">&#182;</a></h4><p>Sometimes, we want to specify both upper bound and lower bound at the same time. We use this notation,</p>
+$$\lim_{x\to\infty} \frac{x}{x^{1.5}} = \lim_{x\to\infty} x^{-0.5} = \lim_{x\to\infty} \frac{1}{\sqrt{x}} = 0$$<h4 id="Theta">Theta<a class="anchor-link" href="#Theta">&#182;</a></h4><p>Sometimes, we want to specify both upper bound and lower bound at the same time. We use this notation,</p>
 $$f = \Theta(g)$$<p>if and only if,</p>
 <p>$f=O(g)$ and $g=O(f)$</p>
 <p>For example,</p>
@@ -13167,7 +13167,7 @@ $$10n^3-20n^2+1 = \Theta(n^3)$$<h4 id="Analogies-with-Relation-Operators">Analog
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h3><p>We generate the input array of integers with different number of elements from 10 up to 10,000, i.e. 10 elments, 100 elements, 1000 elements, and 10,000 elements. We run the sorting algorithms two times, one is when the input array is randomly shuffled and the second one is when the input array is already sorted from the smallest to the largest. We present the results for different algorithms in the next sections.</p>
+<h3 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h3><p>We generate the input array of integers with different number of elements from 10 up to 10,000, i.e. 10 elements, 100 elements, 1000 elements, and 10,000 elements. We run the sorting algorithms two times, one is when the input array is randomly shuffled and the second one is when the input array is already sorted from the smallest to the largest. We present the results for different algorithms in the next sections.</p>
 <h3 id="Bubble-Sort">Bubble Sort<a class="anchor-link" href="#Bubble-Sort">&#182;</a></h3><p>If we run version 1 of Bubble Sort algorithm on the randomly shuffled array. The output time in seconds are shown here.</p>
 
 <pre><code>bubbletime = [5.7220458984375e-06, 2.2649765014648438e-05, 0.0014679431915283203, 0.2126140594482422, 25.051520347595215]</code></pre>
@@ -13555,7 +13555,7 @@ $$T(n) = O(n)$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see that the logarithmic plot has the slope of about:</p>
-$$\frac{(-4-(-8))}{(12-8)} = \frac{2}{4} \approx 0.5$$<p>We found out that the computation time is not linear and it is not quadratic. You can notice that the computation time for 1,000,000 input elements are only about 0.2 seconds. The other algorithms were too slow to compute this amount of input elements and so we only compute up to 100,000 elements. For 100,000 elements, Bubble Sort takes about 25 seconds while Insertion Sort takes about 7 seconds. Compare this with heapsort which only takes 0.016 seconds.</p>
+$$\frac{(-4-(-8))}{(12-8)} \approx \frac{4}{4} \approx 1$$<p>The slope is actually slightly greater than one if we compute accurately. We found out that the computation time is not linear and it is not quadratic. You can notice that the computation time for 1,000,000 input elements are only about 0.2 seconds. The other algorithms were too slow to compute this amount of input elements and so we only compute up to 100,000 elements. For 100,000 elements, Bubble Sort takes about 25 seconds while Insertion Sort takes about 7 seconds. Compare this with heapsort which only takes 0.016 seconds.</p>
 <p>It turns out that the computation time for Heapsort is logarithmic. We can see a linear relationship if the x-axis is computed as $n*log(n)$. We will plot the y axis as it is. See the plot below.</p>
 
 </div>
@@ -13784,7 +13784,7 @@ Steps:
 <p>Computation time:</p>
 <ul>
 <li>steps 1 and 2 are constant time, it's $2 \times O(1)$ or simply $O(1)$. </li>
-<li>step 3 is executed as long as there is a swap. In this case, we can consider the worst case scenario. In the wors't case, the number of swap will be the same as $n-1$. In this case the computation time is $O(n)$. In the best case scenario, there is no swap because it is already sorted, and the computation time is $O(1)$. So on average, the computation time is $O(n/2)$, which is the same as $O(n)$. <ul>
+<li>step 3 is executed as long as there is a swap. In this case, we can consider the worst case scenario. In the worst case, the number of swap will be the same as $n-1$. In this case the computation time is $O(n)$. In the best case scenario, there is no swap because it is already sorted, and the computation time is $O(1)$. So on average, the computation time is $O(n/2)$, which is the same as $O(n)$. <ul>
 <li>steps 3.1 and 3.2 are constant time, it's $O(1)$. </li>
 <li>step 3.3 is $n-1$ times, so the computation time is $O(n)$. <ul>
 <li>steps 3.3.1 to 3.3.3 are all constant time, it's $O(1)$. </li>
@@ -13922,7 +13922,7 @@ Steps:
 <p>In this case, computation time is:</p>
 <p>$T(n) = O(1) + O(\log(n)) \times (O(1) \times O(1))$</p>
 <p>$T(n) = O(\log(n))$</p>
-<h3 id="How-do-we-get-the-$\log(n)$-time-for-step-3?">How do we get the $\log(n)$ time for step 3?<a class="anchor-link" href="#How-do-we-get-the-$\log(n)$-time-for-step-3?">&#182;</a></h3><p>You can skip this part if you want. But for those curious, let's represent some example of binary tree and calculate the number of levels and its nodes or elements.</p>
+<h3 id="How-do-we-get-the-$\log(n)$-time-for-step-3?">How do we get the $\log(n)$ time for step 3?<a class="anchor-link" href="#How-do-we-get-the-$\log(n)$-time-for-step-3?">&#182;</a></h3><p>You can skip this part if you want. But for those curious, let's represent some example of binary tree and calculate the number of levels and its nodes or elements. In the below table, we represent the nodes at different levels with different symbols. For example, when there are 3 levels (level 2 row in the table), the only node in level 0 is represented as <code>o</code>, level 1 nodes are represented as <code>x</code> (there are two of them), and level 2 nodes are represented as <code>o</code> again (there are four of them, two for each <code>x</code> node in level 1).</p>
 <table>
 <thead><tr>
 <th>level</th>
@@ -13959,14 +13959,13 @@ Steps:
 </tbody>
 </table>
 <p>From the above table we can see that the maximum number of elements at level <em>i</em> can be calculated from the level position as</p>
-$$n_{i} = 2^i$$<p>For example, at level $i=3$, the maximum number of elements can be up to $n = 2^3 = 8$. The total number of elements, can therefore be calculated from</p>
-$$n = \sum^{i_{max}}_{i = 0} 2^i$$<p>In geometric series, 
-$$a + ar + ar^2 + \ldots + ar^{n-1} = \frac{a(1-r^n)}{1-r}$$</p>
-<p>In the above sum, $a=1$ and $r=2$, and the number of terms is $i_{max}+1$. Therefore,</p>
-$$n = \frac{(1-2^{i_{max}+1})}{1-2}$$$$n = 2^{i_{max}+1}-1$$<p>For example, if there are three level, $i_{max} = 3$, then the maximum total number of element is $n = 2^4-1 =16-1=15$.</p>
-<p>This also means that we can get the number of level from the number of elements in the tree.</p>
-$$level =\lfloor{ \log_2(n)}\rfloor$$<p>In computing, we usually understand that the base of the log is 2. So we can write it as</p>
-$$level =\lfloor{ \log(n)}\rfloor$$<p>Let's come back to step 3. This step is executed by moving <code>current_i</code> from one node to another node. The movement is always from the parent to the child node. This means that it moves in the vertical direction in the binary tree across the level. So the maximum number of moves will $\log(n)-1$. That's why we say that the computation time is $O(\log(n))$.</p>
+$$n_{i} = 2^i$$<p>For example, at level $i=3$, the maximum number of elements can be up to $n = 2^3 = 8$. The total number of elements can, therefore, be calculated from</p>
+$$n = \sum^{i_{max}}_{i = 0} 2^i$$<p>In a geometric series, we can find the closed form of the summation as follows.</p>
+$$a + ar + ar^2 + \ldots + ar^{n-1} = \frac{a(1-r^n)}{1-r}$$<p>In our summation for the number of nodes $n$ in a binary heap, $a=1$ and $r=2$, and the number of terms is $i_{max}+1$. Therefore,</p>
+$$n = \frac{(1-2^{i_{max}+1})}{1-2}$$$$n = 2^{i_{max}+1}-1$$<p>For example, if there are three levels, $i_{max} = 3$, then the maximum total number of elements is $n = 2^4-1 =16-1=15$.</p>
+<p>This also means that we can get the number of levels from the number of elements in the tree by doing its inverse function as follows.</p>
+$$level =\lfloor{ \log_2(n)}\rfloor$$<p>In computing, we usually understand that the base of the log is 2. Therefore, we usually omit the base in our equation.</p>
+$$level =\lfloor{ \log(n)}\rfloor$$<p>Let's come back to step 3. This step is executed by moving <code>current_i</code> from one node to another node. The movement is always from the parent to the child node. This means that it moves in the vertical direction in the binary tree across the levels. Since there are $\log(n)$ levels, the maximum number of moves will be $\log(n)-1$. That's why we say that the computation time is $O(\log(n))$.</p>
 
 </div>
 </div>
