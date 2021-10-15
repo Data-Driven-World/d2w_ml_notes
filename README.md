@@ -78,11 +78,19 @@ You will need to install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html).
 
 `pip install -r requirements.txt`
 
+### MacOS/Linux
+
 You might need to give permissions to run the bash script
 
 `chmod a+x convert_to_html.sh`
 
 Finally, run `./convert_to_html.sh`
+
+### Windows
+
+Run `convert_to_html_pdf.bat`.
+
+### Result
 
 This should create an `outputs` directory with both the html files and the pdf. If the pdf conversion takes too long, feel free to open the html file in your browser and save accordingly.
 
